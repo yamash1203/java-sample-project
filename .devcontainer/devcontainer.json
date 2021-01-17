@@ -1,0 +1,13 @@
+{
+	"name": "Java11",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+	"extensions": [
+		"vscjava.vscode-java-pack"
+	],
+	"remoteUser": "vscode"
+}
