@@ -11,7 +11,7 @@ ENV MAVEN_HOME /opt/maven
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 
 RUN apt update \
-    && apt install -y sudo wget openjdk-11-jdk \
+    && apt install -y sudo wget git openjdk-11-jdk openjdk-11-source openjdk-11-doc \
     && useradd -s /bin/bash --uid ${USER_UID} -m ${USERNAME} \
     && echo "${USERNAME} ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/${USERNAME} \
     && chmod 0440 /etc/sudoers.d/${USERNAME} \
