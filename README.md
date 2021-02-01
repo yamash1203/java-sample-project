@@ -6,6 +6,12 @@
 mvn exec:java
 ```
 
+or 
+
+```
+mvn exec:java -Dexec.mainClass=com.example.Example -Dexec.args='a b c'
+```
+
 ## Create executable jar
 
 ```
